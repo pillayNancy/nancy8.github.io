@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresher's 2024 Invitation</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      background-color: #a8cca7; /* Light gray background color */
+      color: #333;
+    }
+    .container {
+      background-color: #a5f395; /* White background for content */
+      border: 1px solid #f58181;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(37, 35, 35, 0.1);
+    }
+    .rounded-img {
+      border-radius: 8px;
+    }
+    .btn-primary {
+      background-color: #ce5e8ce3; /* Warm color */
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #7c3b59; /* Slightly darker on hover */
+    }
+    .btn-secondary {
+      background-color: #c56461; /* Warm coral color */
+      border: none;
+    }
+    .btn-secondary:hover {
+      background-color: #572d27; /* Slightly darker on hover */
+    }
+    .modal-content {
+      background-color: #daaa74; /* Light vintage background color */
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0; /* Remove padding to allow image to fit the modal */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .modal-header {
+      border-bottom: none;
+      padding: 0; /* Remove padding to allow image to fit the modal */
+    }
+    .modal-body {
+      text-align: center;
+    }
+    .modal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem;
+      color: #6a4c41; /* Warm vintage color */
+    }
+    .modal-body h6 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #8c5d47; /* Classy color */
+      margin: 10px 0;
+    }
+    .modal-body p {
+      font-family: 'Garamond', serif;
+      font-size: 1rem;
+      color: #333;
+    }
+    .theme-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #a77a72; /* Classy color */
+      margin-top: 20px;
+    }
+    .imagine {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: x-large;
+    }
+    .para {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: larger;
+    }
+    
+    /* Image Popup Effect */
+    .img-container {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .img-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .img-container:hover img {
+      transform: scale(1.1); /* Scale the image */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow */
+    }
+    .footer-link {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+    /*.footer-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .footer-link a:hover {
+      text-decoration: underline;
+    }*/
+    
+    /* Adjusted CSS for flyer image */
+    .img8 {
+      width: 100%; /* Full width of the modal */
+      height: 100%; /* Maintain aspect ratio */
+    }
+    .img8 img {
+      width: 100%; /* Full width of the container */
+      height: 100%; /* Full height of the container */
+      object-fit: cover; /* Cover the entire container while preserving aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center my-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <div class="img-container">
+        <img src="download (13).jfif" class="rounded-img img-fluid" alt="farm photo" />
+      </div>
+      <p class="imagine">🎀FRESHER'S PARTY 2024🎀</p>
+      <p class="para" id="first">
+        Dear FY, SY, and TY Computer Science Students, you’re warmly invited to our Computer Science Department Freshers' Party on August 10th! Join us for a fun-filled day of laughter and enjoyment. Click on "About" for more details about the party, and be sure to click "Join" to view the party flyer. We look forward to celebrating with you! 🎉 Enjoy some snacks with us after the party!🍴🥤
+      </p>
+      <a href="about.html">
+        <button class="btn btn-secondary"style="font-size: 1.25rem; padding: 5px 10px;">About Party</button>
+      </a>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#invitationModal"style="font-size: 1.25rem; padding: 5px 10px;">Join Party</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="invitationModal" tabindex="-1" aria-labelledby="invitationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="img8">
+            <img src="mainflyer.jfif" alt="Flyer">
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script>
+    document
+      .getElementsByClassName("btn btn-primary")[0]
+      .addEventListener("click", () => {
+        confetti({ particleCount: 300, spread: 55 });
+
+        var end = Date.now() + 15 * 200;
+
+        (function frame() {
+          confetti({
+            particleCount: 4,
+            angle: 60,
+            spread: 90,
+            origin: { x: 0 },
+          });
+          confetti({
+            particleCount: 4,
+            angle: 120,
+            spread: 100,
+            origin: { x: 1 },
+          });
+
+          if (Date.now() < end) {
+            requestAnimationFrame(frame);
+          }
+        })();
+      });
+
+    function change_text() {
+      document.getElementById("first").innerHTML =
+        "Yayy!! We have you on our Fresher's List!";
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
