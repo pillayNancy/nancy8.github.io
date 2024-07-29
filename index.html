@@ -86,10 +86,18 @@
     .imagine {
       font-family: 'Courier New', Courier, monospace;
       font-size: x-large;
+      text-shadow: 
+                0 0 5px #ffffff,  /* White glow */
+                0 0 10px #ffffff, /* Larger white glow */
+                0 0 15px #f5f3f7, /* Pink glow */
+                0 0 20px #fcfbfd, /* Larger pink glow */
+                0 0 25px #f6f4f7, /* Even larger pink glow */
+                0 0 30px #f7f6f8; /* Largest pink glow */
     }
     .para {
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-size: larger;
+      text-shadow: 2px 2px 5px rgb(183, 169, 197);
     }
     
     /* Image Popup Effect */
@@ -98,6 +106,7 @@
       display: inline-block;
       overflow: hidden;
       border-radius: 8px;
+      filter: drop-shadow(0 0 10px rgba(230, 76, 230, 0.8)); /* Green glow */
     }
     .img-container img {
       display: block;
@@ -138,15 +147,15 @@
     <div class="col-lg-6 col-md-8 mx-auto">
       <div class="img-container">
         <img src="download (13).jfif" class="rounded-img img-fluid" alt="farm photo" />
-      </div>
-      <p class="imagine"><b>🎀FRESHER'S PARTY 2024🎀</b></p>
+      </div><br><br>
+      <p class="imagine"><marquee behavior="scroll" direction="left" scrollamount="4"><b>🎀FRESHER'S PARTY 2024🎀</b></marquee></p>
       <p class="para" id="first">
-        <i>>Dear FY, SY, and TY Computer Science Students, you’re warmly invited to our Computer Science Department Freshers' Party on August 10th! Join us for a fun-filled day of laughter and enjoyment. Click on "About" for more details about the party, and be sure to click "Join" to view the party flyer. We look forward to celebrating with you!</i> 🎉 <i>Enjoy some snacks with us after the party!</i>🍴🥤
+        <i><b>Dear FY, SY, and TY Computer Science Students, you’re warmly invited to our Computer Science Department Freshers' Party on August 10th! Join us for a fun-filled day of laughter and enjoyment. Click on "About" for more details about the party, and be sure to click "Join" to view the party flyer. We look forward to celebrating with you! 🎉 Enjoy some snacks with us after the party!🍴🥤</b></i>
       </p>
       <a href="about.html">
-        <button class="btn btn-secondary"style="font-size: 1.25rem; padding: 5px 10px;">About Party</button>
+        <button class="btn btn-secondary"style="font-size: 1.25rem; padding: 5px 10px;"><b>About Party</b></button>
       </a>
-      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#invitationModal"style="font-size: 1.25rem; padding: 5px 10px;">Join Party</button>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#invitationModal"style="font-size: 1.25rem; padding: 5px 10px;"><b>Join Party</b></button>
     </div>
   </div>
 
